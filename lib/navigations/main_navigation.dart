@@ -1,7 +1,7 @@
 import 'package:a3_frontend/assets/colors.dart';
 import 'package:a3_frontend/pages/add_page.dart';
 import 'package:a3_frontend/pages/home_page.dart';
-import 'package:a3_frontend/pages/list_page.dart';
+import 'package:a3_frontend/pages/categories.dart';
 import 'package:a3_frontend/pages/notifications_page.dart';
 import 'package:a3_frontend/pages/profile_page.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +18,7 @@ class _HomePageState extends State<MainPage> {
   int _selectedItem=0;
   final screens=[
     HomePage(),
-    ListPage(),
+    CategoryListPage(),
     AddPage(),
     NotifyPage(),
     ProfilePage()

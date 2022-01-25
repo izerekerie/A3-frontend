@@ -8,6 +8,7 @@ class CategoryList extends StatefulWidget {
 }
 
 class _CategoryListState extends State<CategoryList> {
+  String selectedId='';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,18 +30,21 @@ class _CategoryListState extends State<CategoryList> {
                 child: Row(
 
                 children: <Widget>[
-                IconButton(icon: Icon(Icons.keyboard_arrow_left,color: Colors.white,), onPressed: (){}),
+                IconButton(icon: Icon(Icons.keyboard_arrow_left,color: Colors.white,size: 30,), onPressed: (){
+                    Navigator.pushNamed(context,'/home');
+                }),
                 // Expanded(child: Container()),
                 Padding(
 
-                padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 10),
+                padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 30),
                 child: Text('A3 Frontend',
                 style: TextStyle(
                 color: Colors.white,fontFamily: 'OpenSans',fontSize: 18,fontWeight:FontWeight.bold
 
                 ),),
                 ),
-
+                  Expanded(child: Container()),
+               IconButton(icon: Icon(Icons.more_vert_rounded,size: 30,color: Colors.white,),onPressed:(){})
                 ],
                 ),
               ),
@@ -88,7 +92,11 @@ class _CategoryListState extends State<CategoryList> {
                       ],
                       ),
                       Expanded(child: Container()),
-                      IconButton(icon:Icon(Icons.keyboard_arrow_right,size: 30,color: AppColor.mainColor,), onPressed: ()=>{})
+                      IconButton(icon:Icon( selectedId == index.toString() ? Icons.check_box_rounded: Icons.check_box_outline_blank,size: 24,color: AppColor.mainColor,), onPressed: ()=>{
+                      setState(() {
+                      selectedId = index.toString();
+                      })
+                      })
                       ]),
                     ),
                     ),

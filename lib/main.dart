@@ -1,6 +1,8 @@
 
 import 'package:a3_frontend/navigations/main_navigation.dart';
+import 'package:a3_frontend/pages/categories.dart';
 import 'package:a3_frontend/pages/category_list.dart';
+
 import 'package:a3_frontend/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 void main()=>runApp(MaterialApp(
@@ -10,7 +12,9 @@ void main()=>runApp(MaterialApp(
   // '/':(context)=>WelcomePage(),
 
      '/home':(context)=>MainPage(),
-    '/category':(context)=>CategoryList(),
+    '/categories':(context)=>CategoryListPage(),
+    '/categoryList':(context)=>CategoryList(),
+
 
   },
 ));

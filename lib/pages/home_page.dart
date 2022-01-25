@@ -123,7 +123,7 @@ class _HomePageState extends State<HomePage> {
 
                         child:InkWell(
                           onTap: (){
-                            Navigator.pushNamed(context,'/category');
+                            Navigator.pushNamed(context,'/categoryList');
                           },
                           child: Padding(
                             padding: const EdgeInsets.all(20.0),
