@@ -73,7 +73,7 @@ class _CategoryListState extends State<CategoryList> {
                     ),
                     ),
                     // borderRadius: BorderRadius.all( Radius.circular(10)),
-                    boxShadow: [BoxShadow(blurRadius: 15, color: Colors.grey[200], spreadRadius: 1)],
+                    boxShadow: [BoxShadow(blurRadius: 15, color: AppColor.grey, spreadRadius: 1)],
                     ),
                     child:  Padding(
                     padding: const EdgeInsets.all(8.0),

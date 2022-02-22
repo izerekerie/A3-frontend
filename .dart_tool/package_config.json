@@ -137,10 +137,10 @@
       "name": "a3_frontend",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-01-24T19:41:50.390616Z",
+  "generated": "2022-02-02T10:20:00.816628Z",
   "generator": "pub",
   "generatorVersion": "2.12.3"
 }

@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
                     decoration: BoxDecoration(
 
                       shape: BoxShape.circle,
-                      boxShadow: [BoxShadow(blurRadius: 20, color: Colors.grey[400], spreadRadius: 0.4)],
+                      boxShadow: [BoxShadow(blurRadius: 20, color: Colors.grey, spreadRadius: 0.4)],
                     ),
                     child: CircleAvatar(
                       backgroundImage: AssetImage('images/profile.jpg'),
@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.white,
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.all( Radius.circular(10)),
-                          boxShadow: [BoxShadow(blurRadius: 15, color: Colors.grey[200], spreadRadius: 1)],
+                          boxShadow: [BoxShadow(blurRadius: 15, color: AppColor.grey, spreadRadius: 1)],
                         ),
 
                         child:InkWell(
@@ -180,7 +180,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                 ),
                       // borderRadius: BorderRadius.all( Radius.circular(10)),
-                      boxShadow: [BoxShadow(blurRadius: 15, color: Colors.grey[200], spreadRadius: 1)],
+                      boxShadow: [BoxShadow(blurRadius: 15, color: AppColor.grey, spreadRadius: 1)],
                     ),
               child:  Padding(
                 padding: const EdgeInsets.all(8.0),

@@ -56,8 +56,8 @@ class CustomBottomNavigationBar extends StatefulWidget {
 
   CustomBottomNavigationBar(
       {this.defaultSelectedIndex = 0,
-        @required this.iconList,
-        @required this.onChange});
+        required this.iconList,
+        required this.onChange});
 
   @override
   _CustomBottomNavigationBarState createState() =>

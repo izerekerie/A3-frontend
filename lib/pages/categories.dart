@@ -63,7 +63,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
                       shrinkWrap: true,
                       itemBuilder: (context, index) =>  Container(
                         decoration: BoxDecoration(
-                          boxShadow: [BoxShadow(blurRadius: 15, color: Colors.grey[200], spreadRadius: 1)],
+                          boxShadow: [BoxShadow(blurRadius: 15, color: AppColor.grey, spreadRadius: 1)],
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
                               topRight: Radius.circular(0),
